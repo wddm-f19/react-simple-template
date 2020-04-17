@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import HelloWorld from 'components/HelloWorld'
+import Course from 'components/Course'
+import Lessons from 'components/Lessons'
 
 import 'css/reset.css';
 import 'css/index.css';
@@ -13,9 +14,8 @@ const App = () => {
 			<header></header>
 			<Router>
 
-				<Route path="/">
-					<HelloWorld />
-				</Route>
+				<Route exact path="/" component={Course} />
+				<Route path="/lessons" component={Lessons} />
 
 			</Router>
 			<footer></footer>

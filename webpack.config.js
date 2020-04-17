@@ -32,5 +32,11 @@ module.exports = {
 			css: path.resolve(__dirname, 'src/css/'),
 			img: path.resolve(__dirname, 'src/img/'),
 		}
+	},
+	devServer: {
+		historyApiFallback: true
+	},
+	output: {
+		publicPath: '/'
 	}
 };
