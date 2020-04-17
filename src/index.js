@@ -11,21 +11,8 @@ import 'css/index.css';
 const App = () => {
 	return (
 		<Router>
-			<header>
-				<nav>
-					<ul>
-						<li><Link to="/">Course Home</Link></li>
-						<li><Link to="/lessons">Lessons</Link></li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-
-				<Route exact path="/" component={Course} />
-				<Route path="/lessons" component={Lessons} />
-
-			</main>
-			<footer>Copyright 2020 &copy;</footer>
+			<Route exact path="/" component={Course} />
+			<Route path="/lessons" component={Lessons} />
 		</Router>
 	)
 }
