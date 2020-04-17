@@ -1,16 +1,12 @@
 import React from 'react';
-import Header from 'components/Header'
-import Footer from 'components/Footer'
+import Layout from 'components/Layout'
 
 const Course = () => {
+ 
 	return (
-		<>
-			<Header />
-			<main>
-				<h1>Welcome to WDDM 122</h1>
-			</main>
-			<Footer />
-		</>
+		<Layout heading="Welcome to WDDM 122">
+			<p>Hello world</p>
+		</Layout>
 	)
 }
 

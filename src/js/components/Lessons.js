@@ -1,17 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Header from 'components/Header'
-import Footer from 'components/Footer'
+import Layout from 'components/Layout'
 
 const Lessons = () => {
 	return (
-		<>
-			<Header />
-			<main>
-				<h1>Lessons</h1>
-			</main>
-			<Footer />
-		</>
+		<Layout heading="Lessons">
+			<ul>
+				<li>Lesson 1</li>
+				<li>Lesson 2</li>
+				<li>Lesson 3</li>
+			</ul>
+		</Layout>
 	)
 }
 

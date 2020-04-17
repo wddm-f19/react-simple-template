@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
-const Header = () => {
+const Header = ({heading}) => {
+
 	return (
 		<header>
 			<nav>
@@ -10,6 +11,8 @@ const Header = () => {
 					<li><Link to="/lessons">Lessons</Link></li>
 				</ul>
 			</nav>
+			{(heading) ? <h1>{heading}</h1> : `No heading`}
+			
 		</header>
 	)
 }
