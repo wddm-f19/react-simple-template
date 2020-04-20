@@ -12,7 +12,8 @@ const App = () => {
 	return (
 		<Router>
 			<Route exact path="/" component={Course} />
-			<Route path="/lessons" component={Lessons} />
+			<Route exact path="/lessons" component={Lessons} />
+			<Route path="/lessons/:week" component={Lessons} />
 		</Router>
 	)
 }
